@@ -10,4 +10,4 @@ list(TRANSFORM MISC_SOURCES PREPEND "${CMAKE_CURRENT_SOURCE_DIR}/")
 
 add_library(SugarLibrary ${ADT_SOURCES} ${MISC_SOURCES})
 
-target_include_directories(SugarLibrary PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}")
+target_include_directories(SugarLibrary PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
